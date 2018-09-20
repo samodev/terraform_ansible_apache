@@ -11,6 +11,11 @@ pipeline {
 				 sh "git checkout master"
 			}
 		}
+		stage('become root') {
+			steps {
+				sh "sudo su"
+			}
+		}
 		stage('ansible-playbook') {
 			steps {
 				sh "ansible-playbook installApache.yml"

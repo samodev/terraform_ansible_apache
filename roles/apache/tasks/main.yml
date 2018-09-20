@@ -5,8 +5,6 @@
   apt:
     name: httpd
     state: latest
-    become: yes
-    become_method: sudo
   register: Output
 
 - name: start service httpd - if install succeeded
