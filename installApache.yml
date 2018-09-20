@@ -2,6 +2,7 @@
 - name: Installer apache
   hosts: 127.0.0.1
   remote_user: stage
+  become: true
   
   roles:
     - apache
