@@ -13,7 +13,7 @@ pipeline {
 		}
 		stage('ansible-playbook') {
 			steps {
-				sh "ansible-playbook installApache.yml"
+				sh "sudo su && ansible-playbook installApache.yml"
 			}
 		}	
 	}
