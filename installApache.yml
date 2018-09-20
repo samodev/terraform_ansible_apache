@@ -1,9 +1,8 @@
 ---
 - name: Installer apache
   hosts: 127.0.0.1
-  remote_user: root
-  sudo: yes
-
+  remote_user: stage
+  
   roles:
     - apache
 ...
