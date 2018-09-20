@@ -1,0 +1,9 @@
+---
+- name: Installer apache
+  hosts: 127.0.0.1
+  remote_user: root
+  become: true
+
+  roles:
+    - apache
+...
